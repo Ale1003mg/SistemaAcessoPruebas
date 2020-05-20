@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sistema Acceso</string>
+
+    <string name="Saludo">Sistema de Acceso</string>
+    <string name="Bienvenida">Bienvenido al Sistema de Acceso</string>
+
+
+    <string name="Loggin">Acceso</string>
+    <string name="Usuario">Usuario</string>
+    <string name="PW">Contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+
+    <string name="Buscar">Buscar</string>
+    <string name="Compartir">Compartir</string>
+    <string name="Insertar">Insert</string>
+    <string name="Modificar">Modificar</string>
+    <string name="Eliminar">Eliminar</string>
+    <string name="Cerrar">Cerrar Seccion</string>
+
+</resources>
