@@ -27,10 +27,16 @@ public class SPrincipal extends AppCompatActivity {
             Toast.makeText(this,"Buscar",Toast.LENGTH_LONG).show();
         }else if (id== R.id.Compartir){
             Toast.makeText(this,"Compartir",Toast.LENGTH_LONG).show();
-        }else if (id== R.id.Insertar){
-            Toast.makeText(this,"Insertar",Toast.LENGTH_LONG).show();
-        }else if (id== R.id.Modificar){
-            Toast.makeText(this,"Modificar",Toast.LENGTH_LONG).show();
+        }else if (id== R.id.Mantenimiento){
+            Toast.makeText(this,"Mantenimiento",Toast.LENGTH_LONG).show();
+            Intent Siguiente = new Intent(SPrincipal.this,Manteniminento.class);
+            startActivity(Siguiente);
+            finish();
+        }else if (id== R.id.Videos){
+            Toast.makeText(this,"Videos",Toast.LENGTH_LONG).show();
+            Intent Pruebas = new Intent(SPrincipal.this,Prueba.class);
+            startActivity(Pruebas);
+            finish();
         }else if (id== R.id.Eliminar){
             Toast.makeText(this,"Eliminar",Toast.LENGTH_LONG).show();
         }else if (id== R.id.Closed){

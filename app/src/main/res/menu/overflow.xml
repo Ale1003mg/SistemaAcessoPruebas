@@ -13,11 +13,11 @@
         android:title="Item"
         app:showAsAction="always" />
     <item
-        android:id="@+id/Insertar"
-        android:title="@string/Ingresar" />
+        android:id="@+id/Mantenimiento"
+        android:title="@string/Mante" />
     <item
-        android:id="@+id/Modificar"
-        android:title="@string/Modificar" />
+        android:id="@+id/Videos"
+        android:title="@string/Videos" />
     <item
         android:id="@+id/Eliminar"
         android:title="@string/Eliminar" />

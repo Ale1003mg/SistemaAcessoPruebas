@@ -24,7 +24,9 @@ public class PaginaPrincipal extends AppCompatActivity {
     public  void  Ingresar(View view){
         String Cliente= Usuario.getText().toString();
         String Contraseña=PAssword.getText().toString();
-
+        CSegundaria Logeo = new CSegundaria();
+        Logeo.Obtener(Cliente,Contraseña);
+       // int aux=Logeo.Loggeo();
         int aux=1;
         if (aux==1){
             Intent Siguiente = new Intent(this,SPrincipal.class);

@@ -17,4 +17,12 @@
     <string name="Eliminar">Eliminar</string>
     <string name="Cerrar">Cerrar Seccion</string>
 
+    <string name="Mante">Mantenimiento</string>
+    <string name="ID">ID</string>
+    <string name="Usuario2">ID Usuario</string>
+    <string name="Titulo">Titulo</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="Regresar">Regresar</string>
+
+    <string name="Videos">Videos</string>
 </resources>
