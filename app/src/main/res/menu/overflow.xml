@@ -20,7 +20,7 @@
         android:title="@string/Tablas" />
     <item
         android:id="@+id/Eliminar"
-        android:title="@string/Eliminar" />
+        android:title="@string/title_activity_pruebasubmenus" />
     <item
         android:id="@+id/Closed"
         android:title="@string/Cerrar" />

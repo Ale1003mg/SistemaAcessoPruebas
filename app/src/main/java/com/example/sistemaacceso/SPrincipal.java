@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 public class SPrincipal extends AppCompatActivity {
@@ -13,6 +15,9 @@ public class SPrincipal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_s_principal);
     }
 
@@ -33,12 +38,15 @@ public class SPrincipal extends AppCompatActivity {
             startActivity(Siguiente);
             finish();
         }else if (id== R.id.Videos){
-            Toast.makeText(this,"Videos",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Tablas",Toast.LENGTH_LONG).show();
             Intent Pruebas = new Intent(SPrincipal.this,Prueba.class);
             startActivity(Pruebas);
-            finish();
+            //finish();
         }else if (id== R.id.Eliminar){
-            Toast.makeText(this,"Eliminar",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"SubMenu",Toast.LENGTH_LONG).show();
+           // Intent Submenu = new Intent(SPrincipal.this,Pruebasubmenus.class);
+          //  startActivity(Submenu);
+         //   finish();
         }else if (id== R.id.Closed){
             Intent siguiente = new Intent(SPrincipal.this,PaginaPrincipal.class);
             startActivity(siguiente);
