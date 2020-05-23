@@ -24,5 +24,6 @@
     <string name="Descripcion">Descripcion</string>
     <string name="Regresar">Regresar</string>
 
-    <string name="Videos">Videos</string>
+    <string name="Tablas">Tablas</string>
+    <string name="MTablas">Tablas de Usuarios</string>
 </resources>

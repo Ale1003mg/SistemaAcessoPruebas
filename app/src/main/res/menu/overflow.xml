@@ -17,7 +17,7 @@
         android:title="@string/Mante" />
     <item
         android:id="@+id/Videos"
-        android:title="@string/Videos" />
+        android:title="@string/Tablas" />
     <item
         android:id="@+id/Eliminar"
         android:title="@string/Eliminar" />
