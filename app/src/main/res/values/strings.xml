@@ -27,10 +27,11 @@
     <string name="Tablas">Tablas</string>
     <string name="MTablas">Tablas de Usuarios</string>
     <string name="title_activity_pruebasubmenus">Pruebasubmenus</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="Correo">Correo</string>
+    <string name="DE">DE</string>
+    <string name="Para">Para</string>
+    <string name="Asunto">Asunto</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_submenu">Submenu</string>
+
+
 </resources>

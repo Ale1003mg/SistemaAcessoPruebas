@@ -20,7 +20,8 @@
         android:title="@string/Tablas" />
     <item
         android:id="@+id/Eliminar"
-        android:title="@string/title_activity_pruebasubmenus" />
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="@string/Correo" />
     <item
         android:id="@+id/Closed"
         android:title="@string/Cerrar" />

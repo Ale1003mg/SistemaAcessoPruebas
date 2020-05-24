@@ -1,7 +1,9 @@
 package com.example.sistemaacceso;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -44,14 +46,34 @@ public class SPrincipal extends AppCompatActivity {
             //finish();
         }else if (id== R.id.Eliminar){
             Toast.makeText(this,"SubMenu",Toast.LENGTH_LONG).show();
-           // Intent Submenu = new Intent(SPrincipal.this,Pruebasubmenus.class);
-          //  startActivity(Submenu);
-         //   finish();
-        }else if (id== R.id.Closed){
-            Intent siguiente = new Intent(SPrincipal.this,PaginaPrincipal.class);
-            startActivity(siguiente);
+            Intent Submenu = new Intent(SPrincipal.this,Correo.class);
+            startActivity(Submenu);
             finish();
-            Toast.makeText(this,"Seccion Cerrada",Toast.LENGTH_LONG).show();
+        }else if (id== R.id.Closed){
+            AlertDialog.Builder builder = new AlertDialog.Builder(SPrincipal.this);
+            builder.setIcon(R.drawable.ic_warning_black_24dp).
+                    //setIcon("ic_warning_black_24dp.xml").
+                    setTitle("Desea salir").
+                    setMessage("Se cerrara la aplicacion y tendra que ingresar las credenciales nuevamente.").
+                    setPositiveButton("Continuar", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            Intent siguiente = new Intent(SPrincipal.this,PaginaPrincipal.class);
+                            startActivity(siguiente);
+                            finish();
+                            Toast.makeText(SPrincipal.this,"Seccion Cerrada",Toast.LENGTH_LONG).show();
+                        }
+                    }).setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Toast.makeText(SPrincipal.this,"Se cancelo",Toast.LENGTH_SHORT).show();
+                }
+            });
+            AlertDialog alertDialog= builder.create();
+            alertDialog.show();
+
+
+
         }
         return super.onOptionsItemSelected(item);
     }
