@@ -31,16 +31,6 @@
                 android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/TXTDE"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:backgroundTint="@color/ic_launcher_background"
-                android:ems="10"
-                android:hint="@string/DE"
-                android:inputType="textWebEmailAddress|textPersonName|textEmailAddress"
-                android:textSize="18sp" />
-
-            <EditText
                 android:id="@+id/TXTPara"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

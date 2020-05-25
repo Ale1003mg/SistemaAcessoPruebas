@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Correo"></activity>
+        <activity android:name=".ViewCrossover"></activity>
+        <activity android:name=".Correo" />
         <activity android:name=".Prueba" />
         <activity android:name=".Manteniminento" />
         <activity android:name=".SPrincipal" />

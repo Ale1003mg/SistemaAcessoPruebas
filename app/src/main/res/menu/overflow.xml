@@ -23,6 +23,9 @@
         android:icon="@drawable/ic_email_black_24dp"
         android:title="@string/Correo" />
     <item
+        android:id="@+id/Prueba"
+        android:title="PregaGridview" />
+    <item
         android:id="@+id/Closed"
         android:title="@string/Cerrar" />
 </menu>

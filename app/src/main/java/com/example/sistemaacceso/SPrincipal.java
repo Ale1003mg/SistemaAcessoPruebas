@@ -45,10 +45,15 @@ public class SPrincipal extends AppCompatActivity {
             startActivity(Pruebas);
             //finish();
         }else if (id== R.id.Eliminar){
-            Toast.makeText(this,"SubMenu",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"Correo",Toast.LENGTH_LONG).show();
             Intent Submenu = new Intent(SPrincipal.this,Correo.class);
             startActivity(Submenu);
             finish();
+        }else if (id== R.id.Prueba){
+            Toast.makeText(this,"Views",Toast.LENGTH_LONG).show();
+            Intent Submenu = new Intent(SPrincipal.this,ViewCrossover.class);
+            startActivity(Submenu);
+            //finish();
         }else if (id== R.id.Closed){
             AlertDialog.Builder builder = new AlertDialog.Builder(SPrincipal.this);
             builder.setIcon(R.drawable.ic_warning_black_24dp).
