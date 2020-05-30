@@ -3,9 +3,11 @@ package com.example.sistemaacceso;
 public class CSegundaria extends CPrincipal {
 
     public int Loggeo(){
-        if (Usuario==Cliente && Password==PW)
+        if (Usuario.equals(Cliente) )
         {
-            return 1;
+            if(Password.equals(PW)){
+                return 1;
+            }
         }
         return 0;
     }
